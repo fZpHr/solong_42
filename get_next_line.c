@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hbelle <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/06 10:28:00 by hbelle            #+#    #+#             */
+/*   Updated: 2023/12/06 10:28:03 by hbelle           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include "get_next_line.h"
 
 char	*ft_loop(int bytes, char *buff, int fd)
@@ -7,7 +18,7 @@ char	*ft_loop(int bytes, char *buff, int fd)
 	line = ft_strdup(buff);
 	if (!line)
 		return (NULL);
-	while (bytes && ft_checkline(line) == 0)
+	while (bytes != 0 && ft_checkline(line) == 0)
 	{
 		bytes = read(fd, buff, BUFFER_SIZE);
 		if (bytes < 0)
@@ -17,8 +28,11 @@ char	*ft_loop(int bytes, char *buff, int fd)
 		}
 		buff[bytes] = '\0';
 		line = ft_strjoin(line, buff);
-		if (line == NULL)
+		if (!line)
+		{
+			free(line);
 			return (NULL);
+		}
 	}
 	return (line);
 }
@@ -44,9 +58,9 @@ void	ft_nextline(char *str)
 
 char	*get_next_line(int fd)
 {
-	static char		buff[BUFFER_SIZE + 1] = "\0";
-	char			*line;
+	static char		buff[BUFFER_SIZE + 1];
 	int				bytes;
+	char			*line;
 
 	bytes = 1;
 	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, 0, 0) < 0)
@@ -60,36 +74,3 @@ char	*get_next_line(int fd)
 	}
 	return (line);
 }
-/*
-#include <stdio.h>
-#include <fcntl.h>
-int	main()
-{
-	int	fdi;
-	int	fdo;
-	int	fdp;
-	char	*line;
-	int	i;
-	
-	fdi = open("42_no_nl", O_RDONLY);
-	fdo = open("43_no_nl", O_RDONLY);
-	fdp = open("big_line_no_nl", O_RDONLY);
-	i = 1;
-	while (i < 5)
-	{
-		line = get_next_line(fdi);
-		printf("Ligne1 : %d\n%s\n", i, line);
-		free(line);
-		line = get_next_line(fdo);
-		printf("Ligne2 : %d\n%s\n", i, line);
-		free(line);
-		line = get_next_line(fdp);
-		printf("Ligne3 : %d\n%s\n", i, line);
-		free(line);
-		i++;
-	}
-	close(fdi);
-	close(fdo);
-	close(fdp);
-	return (0);
-}*/

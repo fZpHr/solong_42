@@ -1,8 +1,8 @@
 #include "mlx/mlx.h"
 #include <stdio.h>
 
-int img_x = 250; // Coord horizontale de l'image du joueur
-int img_y = 250; // Coord verticale de l'image du joueur
+int img_player_x = 250; // Coord horizontale de l'image du joueur
+int img_player_y = 250; // Coord verticale de l'image du joueur
 void *background_ptr; // Pointeur vers l'image de fond
 void *player_ptr_s1; // Pointeur vers l'image du joueur
 void *player_ptr_s2;
@@ -50,27 +50,27 @@ void render(int	i)
    			if (j == 0)
    			{
    				j++;
-				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_w1, img_x, img_y);
+				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_w1, img_player_x, img_player_y);
 			}
 			else if (j == 1)
 			{
 				j++;
-				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_w2, img_x, img_y);
+				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_w2, img_player_x, img_player_y);
 			}
 			else if (j == 2)
 			{
 				j++;
-				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_w3, img_x, img_y);
+				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_w3, img_player_x, img_player_y);
 			}
 			else if (j == 3)
 			{
 				j++;
-				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_w4, img_x, img_y);
+				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_w4, img_player_x, img_player_y);
 			}
 			else if (j == 4)
 			{
 				j = 0;
-				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_w5, img_x, img_y);
+				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_w5, img_player_x, img_player_y);
 			}
 			
 		}
@@ -79,27 +79,27 @@ void render(int	i)
 			if (j == 0)
    			{
    				j++;
-				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_s1, img_x, img_y);
+				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_s1, img_player_x, img_player_y);
 			}
 			else if (j == 1)
 			{
 				j++;
-				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_s2, img_x, img_y);
+				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_s2, img_player_x, img_player_y);
 			}
 			else if (j == 2)
 			{
 				j++;
-				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_s3, img_x, img_y);
+				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_s3, img_player_x, img_player_y);
 			}
 			else if (j == 3)
 			{
 				j++;
-				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_s4, img_x, img_y);
+				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_s4, img_player_x, img_player_y);
 			}
 			else if (j == 4)
 			{
 				j = 0;
-				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_s5, img_x, img_y);
+				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_s5, img_player_x, img_player_y);
 			}
 		}
 		if(i == 3)
@@ -107,27 +107,27 @@ void render(int	i)
 			if (j == 0)
    			{
    				j++;
-				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_a1, img_x, img_y);
+				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_a1, img_player_x, img_player_y);
 			}
 			else if (j == 1)
 			{
 				j++;
-				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_a2, img_x, img_y);
+				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_a2, img_player_x, img_player_y);
 			}
 			else if (j == 2)
 			{
 				j++;
-				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_a3, img_x, img_y);
+				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_a3, img_player_x, img_player_y);
 			}
 			else if (j == 3)
 			{
 				j++;
-				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_a4, img_x, img_y);
+				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_a4, img_player_x, img_player_y);
 			}
 			else if (j == 4)
 			{
 				j = 0;
-				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_a5, img_x, img_y);
+				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_a5, img_player_x, img_player_y);
 			}
 		}
 		if(i == 4)
@@ -135,38 +135,38 @@ void render(int	i)
 			if (j == 0)
    			{
    				j++;
-				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_d1, img_x, img_y);
+				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_d1, img_player_x, img_y);
 			}
 			else if (j == 1)
 			{
 				j++;
-				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_d2, img_x, img_y);
+				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_d2, img_player_x, img_player_y);
 			}
 			else if (j == 2)
 			{
 				j++;
-				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_d3, img_x, img_y);
+				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_d3, img_player_x, img_player_y);
 			}
 			else if (j == 3)
 			{
 				j++;
-				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_d4, img_x, img_y);
+				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_d4, img_player_x, img_player_y);
 			}
 			else if (j == 4)
 			{
 				j = 0;
-				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_d5, img_x, img_y);
+				mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_d5, img_player_x, img_player_y);
 			}
 		}
 	}
-	if (img_x > window_width - 60) 
-		img_x = window_width - 60; // Limite droite
-	if (img_y > window_height - 60) 
-		img_y = window_height - 60; // Limite basse
-	if (img_x < 60) 
-		img_x = 60; // Limite gauche
-	if (img_y < 60) 
-		img_y = 60; // Limite haute
+	if (img_player_x > window_width - 60) 
+		img_player_x = window_width - 60; // Limite droite
+	if (img_player_y > window_height - 60) 
+		img_player_y = window_height - 60; // Limite basse
+	if (img_player_x < 60) 
+		img_player_x = 60; // Limite gauche
+	if (img_player_y < 60) 
+		img_player_y = 60; // Limite haute
 }
 
 
@@ -176,16 +176,16 @@ int handle_input(int key)
 
     // Gestion des touches WASD pour déplacer image du joueur
     if (key == 119) { // Touche W pour monter (ASCII pour 'w')
-            img_y -= step;
+            img_player_y -= step;
             render(1);
     } else if (key == 115) { // Touche S pour descendre (ASCII pour 's')
-            img_y += step;
+            img_player_y += step;
             render(2);
     } else if (key == 97) { // Touche A pour aller à gauche (ASCII pour 'a')
-            img_x -= step;
+            img_player_x -= step;
             render(3);
     } else if (key == 100) { // Touche D pour aller à droite (ASCII pour 'd')
-            img_x += step;
+            img_player_x += step;
             render(4);
     }
  // Met à jour affichage apres le déplacement de l'image du joueur
@@ -245,7 +245,7 @@ int main()
   //  mlx_put_image_to_window(mlx_ptr, win_ptr, background_ptr, 0, 0);
 
     // Affichage image du joueur a la position initiale img_x, img_y
-    mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_s1, img_x, img_y);
+    mlx_put_image_to_window(mlx_ptr, win_ptr, player_ptr_s1, img_player_x, img_player_y);
 
     // Gestion des événements clavier et déplacement image du joueur
     mlx_key_hook(win_ptr, handle_input, mlx_ptr);
