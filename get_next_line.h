@@ -19,6 +19,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 
+char	*ft_itoa(int n);
 size_t	ft_strlen(char *str);
 char	*get_next_line(int fd);
 char	*ft_strdup(char *buff);
