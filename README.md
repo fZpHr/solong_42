@@ -47,5 +47,5 @@ make bonus
 
 ## Play
 
-Use the **W**, **A**, **S**, **D** or arrow keys (up, down, left, right) to navigate in the game. To quit, press the **Esc** key.
+Use the **W**, **A**, **S**, **D** or arrow keys (up, down, left, right (as enemy in bonus)) to navigate in the game. To quit, press the **Esc** key.
 
