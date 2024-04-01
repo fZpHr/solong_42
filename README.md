@@ -42,7 +42,7 @@ make bonus
 
 6. You are ready to play! Launch the game with the following command:
 ```bash
-./so_long <path_to_your_map>
+./so_long
 ```
 
 ## Play
