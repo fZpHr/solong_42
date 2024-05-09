@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   render_reload.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hbelle <hbelle@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hbelle <hbelle@student.42angouleme.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 17:00:05 by hbelle            #+#    #+#             */
-/*   Updated: 2023/12/20 13:04:24 by hbelle           ###   ########.fr       */
+/*   Updated: 2024/05/10 00:56:40 by hbelle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,9 +46,6 @@ void	loop_reload(t_game *g)
 
 void	map_render_reload(t_game *g)
 {
-	int		state;
-
-	state = 0;
 	g->img_y = 0;
 	g->img_x += 0;
 	g->j = 0;

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: hbelle <hbelle@student.42.fr>              +#+  +:+       +#+         #
+#    By: hbelle <hbelle@student.42angouleme.fr>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/18 17:11:29 by hbelle            #+#    #+#              #
-#    Updated: 2023/12/20 16:45:56 by hbelle           ###   ########.fr        #
+#    Updated: 2024/05/10 00:57:15 by hbelle           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,7 +73,7 @@ OBJTS_BONUS = $(BONUS_SRCS:.c=.o)
 
 HEADER = -I includes
 HEADER_BONUS = -I includes_bonus
-CFLAGS = -Wall -Wextra -Werror -I ./mlx/ -g
+CFLAGS = -Wall -Werror -Wextra -I ./mlx/ -g
 
 $(NAME): $(OBJTS)
 	cc -o $(NAME) $(OBJTS) $(CFLAGS) $(HEADER) -L ./mlx -lmlx -lXext -lX11 -lm -lbsd
