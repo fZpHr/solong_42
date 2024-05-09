@@ -38,7 +38,7 @@ make bonus
 ./so_long_bonus
 ```
 
-## Play
+## Key
 
 Use the **W**, **A**, **S**, **D** or arrow keys (up, down, left, right (as enemy in bonus)) to navigate in the game. To quit, press the **Esc** key.
 
