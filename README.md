@@ -26,31 +26,16 @@ git clone git@github.com:fZpHr/solong_42.git
 cd so_long
 ```
 
-2. Download and install the MinilibX graphics library:
-```bash
-git clone https://github.com/42Paris/minilibx-linux.git
-cd minilibx-linux
-make
-```
-
-3. Return to the main directory of the So Long project:
-```bash
-cd ..
-```
-
-4. Compile the executable using the `make` command for the mandatory part:
+2. Compile the executable using the `make` command for the mandatory part:
 ```bash
 make
+./so_long
 ```
 
-5. If you want to enable additional features such as enemies and a step counter on the screen, use the `make bonus` command:
+3. If you want to enable additional features such as enemies and a step counter on the screen, use the `make bonus` command:
 ```bash
 make bonus
-```
-
-6. You are ready to play! Launch the game with the following command:
-```bash
-./so_long
+./so_long_bonus
 ```
 
 ## Play
