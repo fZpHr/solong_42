@@ -9,11 +9,9 @@
 
 So Long is a 2D game project at 42 where you create a game set in a maze. The player navigates through the maze, collecting objects and avoiding obstacles to reach the exit. This project involves programming in C and using fundamental concepts such as memory management, file I/O, and game logic.
 
-Additional features, such as enemies and a step counter, can be implemented to enhance gameplay.
+Additional features, such as enemies and a step counter, can be add with bonus to enhance gameplay.
 
-Once completed, compile and launch the game to play and test your creation.
-
-So Long is a fun project that allows you to apply your programming skills and create an interactive 2D game.
+So Long was a fun project that allows me to apply my programming skills and create an interactive 2D game.
 
 *For more information, please refer to the subject in the git.*
 ## Installation
