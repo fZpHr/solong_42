@@ -1,3 +1,10 @@
+
+
+
+
+![In-game](https://github.com/fZpHr/solong_42/blob/main/ingame.png)
+
+
 ## So Long
 
 So Long is a 2D game project at 42 where you create a game set in a maze. The player navigates through the maze, collecting objects and avoiding obstacles to reach the exit. This project involves programming in C and using fundamental concepts such as memory management, file I/O, and game logic.
