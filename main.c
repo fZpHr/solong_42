@@ -78,20 +78,20 @@ int	main(void)
 	load_player_sprites(&g);
 	if (map_render(&g) == 0)
 	{
-		return (ft_printf("Error\nCheck your map\n"));
 		free_end(&g);
+		return (ft_printf("Error\nCheck your map\n"));
 	}
 	map_into_array(&g);
 	if (check_map(&g) == 0)
 	{
-		return (ft_printf("Error\nCheck your map\n"));
 		free_end(&g);
+		return (ft_printf("Error\nCheck your map\n"));
 	}
 	fill_array(&g);
 	if (check_wall(&g) == 0)
 	{
-		return (ft_printf("Error\nCheck your wall\n"));
 		free_end(&g);
+		return (ft_printf("Error\nCheck your wall\n"));
 	}
 	setup_game(&g);
 	return (0);
