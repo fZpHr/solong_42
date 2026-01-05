@@ -82,20 +82,20 @@ int	main(void)
 	load_player_sprites(&g);
 	if (map_render(&g) == 0)
 	{
-		return (ft_printf("Error\nCheck your map\n"));
 		free_end(&g);
+		return (ft_printf("Error\nCheck your map\n"));
 	}
 	map_into_array(&g);
 	if (check_map(&g) == 0)
 	{
-		return (ft_printf("Error\nCheck your map\n"));
 		free_end(&g);
+		return (ft_printf("Error\nCheck your map\n"));
 	}
 	fill_array(&g);
 	if (check_wall(&g) == 0)
 	{
-		return (ft_printf("Error\nCheck your wall\n"));
 		free_end(&g);
+		return (ft_printf("Error\nCheck your wall\n"));
 	}
 	mlx_string_put(g.mlx_ptr, g.win_ptr, 45, 45, 0x0FF000, itoa_step(&g));
 	setup_game(&g);
